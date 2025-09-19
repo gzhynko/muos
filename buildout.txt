@@ -1,0 +1,538 @@
+warning: unused import: `singleton`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/bus.rs:5:18
+  |
+5 | use rp235x_hal::{singleton, Timer};
+  |                  ^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `core::any::Any`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:1:5
+  |
+1 | use core::any::Any;
+  |     ^^^^^^^^^^^^^^
+
+warning: unused import: `core::cell::RefCell`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:2:5
+  |
+2 | use core::cell::RefCell;
+  |     ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::slice`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:3:5
+  |
+3 | use core::slice;
+  |     ^^^^^^^^^^^
+
+warning: unused imports: `AtomicBool` and `Ordering`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:4:26
+  |
+4 | use core::sync::atomic::{AtomicBool, Ordering};
+  |                          ^^^^^^^^^^  ^^^^^^^^
+
+warning: unused import: `PinState`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:5:40
+  |
+5 | use embedded_hal::digital::{OutputPin, PinState};
+  |                                        ^^^^^^^^
+
+warning: unused imports: `pac` and `singleton`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:6:134
+  |
+6 | use rp235x_hal::{self as hal, pio::{PIOExt, StateMachine, ValidStateMachine, UninitStateMachine, PIO, ShiftDirection}, gpio::AnyPin, singleton, pac};
+  |                                                                                                                                      ^^^^^^^^^  ^^^
+
+warning: unused imports: `DynFunction`, `DynPullType`, and `PullNone`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:7:24
+  |
+7 | use rp235x_hal::gpio::{DynPullType, FunctionSio, OutputDriveStrength, OutputSlewRate, Pin, PinId, PullType, SioOutput, ValidFunction, PullNone, DynFunction};
+  |                        ^^^^^^^^^^^                                                                                                    ^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `Stopped`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:8:63
+  |
+8 | use rp235x_hal::pio::{PinDir, Running, Rx, StateMachineIndex, Stopped, Tx};
+  |                                                               ^^^^^^^
+
+warning: unused import: `ErrorType`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:9:25
+  |
+9 | use embedded_hal::spi::{ErrorType, SpiBus};
+  |                         ^^^^^^^^^
+
+warning: unused imports: `Pace`, `ReadTarget`, and `WriteTarget`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:10:46
+   |
+10 | use rp235x_hal::dma::{Channel, ChannelIndex, Pace, ReadTarget, single_buffer, SingleChannel, WriteTarget};
+   |                                              ^^^^  ^^^^^^^^^^                                ^^^^^^^^^^^
+
+warning: unused imports: `Config` and `Transfer`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:11:38
+   |
+11 | use rp235x_hal::dma::bidirectional::{Config, Transfer};
+   |                                      ^^^^^^  ^^^^^^^^
+
+warning: unused import: `rp235x_hal::pac::pio1::IRQ`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:12:5
+   |
+12 | use rp235x_hal::pac::pio1::IRQ;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rp235x_hal::gpio::SioInput`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:13:5
+   |
+13 | use rp235x_hal::gpio::SioInput;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `trace`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:16:13
+   |
+16 | use defmt::{trace};
+   |             ^^^^^
+
+warning: unused imports: `ReadBuffer` and `WriteBuffer`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:17:20
+   |
+17 | use embedded_dma::{ReadBuffer, WriteBuffer};
+   |                    ^^^^^^^^^^  ^^^^^^^^^^^
+
+warning: unused import: `rp235x_hal::arch::interrupt_enable`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:20:5
+   |
+20 | use rp235x_hal::arch::interrupt_enable;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rp235x_hal::pac::interrupt`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:21:5
+   |
+21 | use rp235x_hal::pac::interrupt;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `trace`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/driver.rs:9:13
+  |
+9 | use defmt::{trace, debug};
+  |             ^^^^^
+
+warning: unexpected `cfg` condition value: `firmware-logs`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/driver.rs:150:15
+    |
+150 |         #[cfg(feature = "firmware-logs")]
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `firmware-logs` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition value: `bluetooth`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/driver.rs:153:15
+    |
+153 |         #[cfg(feature = "bluetooth")]
+    |               ^^^^^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `bluetooth` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `defmt`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:226:7
+    |
+226 | #[cfg(feature = "defmt")]
+    |       ^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `defmt` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `log`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:254:7
+    |
+254 | #[cfg(feature = "log")]
+    |       ^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `log` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `log`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:283:7
+    |
+283 | #[cfg(feature = "log")]
+    |       ^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `log` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `defmt`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:293:7
+    |
+293 | #[cfg(feature = "defmt")]
+    |       ^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `defmt` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `log`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:327:7
+    |
+327 | #[cfg(feature = "log")]
+    |       ^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `log` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `log`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:362:7
+    |
+362 | #[cfg(feature = "log")]
+    |       ^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `log` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition value: `defmt`
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/consts.rs:370:12
+    |
+370 | #[cfg_attr(feature = "defmt", derive(defmt::Format))]
+    |            ^^^^^^^^^^^^^^^^^ help: remove the condition
+    |
+    = note: no expected values for `feature`
+    = help: consider adding `defmt` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `ValidStateMachine`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:6:59
+  |
+6 | use rp235x_hal::{self as hal, pio::{PIOExt, StateMachine, ValidStateMachine, UninitStateMachine, PIO, ShiftDirection}, gpio::AnyPin, singleton, pac};
+  |                                                           ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `SpiBus`
+ --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:9:36
+  |
+9 | use embedded_hal::spi::{ErrorType, SpiBus};
+  |                                    ^^^^^^
+
+warning: unused import: `SingleChannel`
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:10:79
+   |
+10 | use rp235x_hal::dma::{Channel, ChannelIndex, Pace, ReadTarget, single_buffer, SingleChannel, WriteTarget};
+   |                                                                               ^^^^^^^^^^^^^
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/bus.rs:130:13
+    |
+130 |         let mut val = IRQ_F2_F3_FIFO_RD_UNDERFLOW
+    |             ----^^^
+    |             |
+    |             help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:57:9
+   |
+57 |         mut pio: &mut PIO<P>,
+   |         ----^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:171:13
+    |
+171 |         let mut dma_config = single_buffer::Config::new(
+    |             ----^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:184:13
+    |
+184 |         let mut dma_config = single_buffer::Config::new(
+    |             ----^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:229:13
+    |
+229 |         let mut dma_config = single_buffer::Config::new(
+    |             ----^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:245:13
+    |
+245 |         let mut dma_config = single_buffer::Config::new(
+    |             ----^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:261:13
+    |
+261 |         let mut dma_config = single_buffer::Config::new(
+    |             ----^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: multiple fields are never read
+  --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/lib.rs:42:5
+   |
+39 | struct Chip {
+   |        ---- fields in this struct
+...
+42 |     bluetooth_base_address: u32,
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+...
+45 |     pmu_base_address: u32,
+   |     ^^^^^^^^^^^^^^^^
+...
+48 |     socram_srmem_size: u32,
+   |     ^^^^^^^^^^^^^^^^^
+49 |     chanspec_band_mask: u32,
+   |     ^^^^^^^^^^^^^^^^^^
+50 |     chanspec_band_2g: u32,
+   |     ^^^^^^^^^^^^^^^^
+51 |     chanspec_band_5g: u32,
+   |     ^^^^^^^^^^^^^^^^
+52 |     chanspec_band_shift: u32,
+   |     ^^^^^^^^^^^^^^^^^^^
+53 |     chanspec_bw_10: u32,
+   |     ^^^^^^^^^^^^^^
+54 |     chanspec_bw_20: u32,
+   |     ^^^^^^^^^^^^^^
+55 |     chanspec_bw_40: u32,
+   |     ^^^^^^^^^^^^^^
+56 |     chanspec_bw_mask: u32,
+   |     ^^^^^^^^^^^^^^^^
+57 |     chanspec_bw_shift: u32,
+   |     ^^^^^^^^^^^^^^^^^
+58 |     chanspec_ctl_sb_lower: u32,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+59 |     chanspec_ctl_sb_upper: u32,
+   |     ^^^^^^^^^^^^^^^^^^^^^
+60 |     chanspec_ctl_sb_none: u32,
+   |     ^^^^^^^^^^^^^^^^^^^^
+61 |     chanspec_ctl_sb_mask: u32,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: creating a mutable reference to mutable static is discouraged
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:182:61
+    |
+182 |         let status_static: &'static mut [u32; 1] = unsafe { &mut DMA_STATUS_BUF };
+    |                                                             ^^^^^^^^^^^^^^^^^^^ mutable reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: mutable references to mutable statics are dangerous; it's undefined behavior if any other pointer to the static is used or if any other reference is created for the static while the mutable reference lives
+    = note: `#[warn(static_mut_refs)]` on by default
+help: use `&raw mut` instead to create a raw pointer
+    |
+182 |         let status_static: &'static mut [u32; 1] = unsafe { &raw mut DMA_STATUS_BUF };
+    |                                                              +++
+
+warning: creating a mutable reference to mutable static is discouraged
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:225:58
+    |
+225 |         let cmd_static: &'static mut [u32; 1] = unsafe { &mut DMA_CMD_BUF };
+    |                                                          ^^^^^^^^^^^^^^^^ mutable reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: mutable references to mutable statics are dangerous; it's undefined behavior if any other pointer to the static is used or if any other reference is created for the static while the mutable reference lives
+help: use `&raw mut` instead to create a raw pointer
+    |
+225 |         let cmd_static: &'static mut [u32; 1] = unsafe { &raw mut DMA_CMD_BUF };
+    |                                                           +++
+
+warning: creating a mutable reference to mutable static is discouraged
+   --> /Users/gzhynko/Projects/Embedded/RPiPico/cyw43-min/src/pio_spi.rs:259:61
+    |
+259 |         let status_static: &'static mut [u32; 1] = unsafe { &mut DMA_STATUS_BUF };
+    |                                                             ^^^^^^^^^^^^^^^^^^^ mutable reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: mutable references to mutable statics are dangerous; it's undefined behavior if any other pointer to the static is used or if any other reference is created for the static while the mutable reference lives
+help: use `&raw mut` instead to create a raw pointer
+    |
+259 |         let status_static: &'static mut [u32; 1] = unsafe { &raw mut DMA_STATUS_BUF };
+    |                                                              +++
+
+warning: unstable feature specified for `-Ctarget-feature`: `d32`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+warning: unstable feature specified for `-Ctarget-feature`: `vfp2`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+warning: unstable feature specified for `-Ctarget-feature`: `vfp3`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+warning: unstable feature specified for `-Ctarget-feature`: `vfp4`
+  |
+  = note: this feature is not stably supported; its behavior can change in the future
+
+warning: `cyw43-min` (lib) generated 46 warnings (run `cargo fix --lib -p cyw43-min` to apply 26 suggestions)
+   Compiling muos-threads v0.1.0 (/Users/gzhynko/Projects/Embedded/RPiPico/muos/muos-threads)
+warning: unnecessary trailing semicolon
+   --> muos-threads/src/scheduler.rs:177:86
+    |
+177 |         let task_regs = with_scheduler(|sched| sched.get_initial_thread_registers());;
+    |                                                                                      ^ help: remove this semicolon
+    |
+    = note: `#[warn(redundant_semicolons)]` on by default
+
+warning: unused import: `core::arch::asm`
+ --> muos-threads/src/interrupts.rs:1:5
+  |
+1 | use core::arch::asm;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `cortex_m::interrupt`
+ --> muos-threads/src/interrupts.rs:2:5
+  |
+2 | use cortex_m::interrupt;
+  |     ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `schedule`
+ --> muos-threads/src/interrupts.rs:5:24
+  |
+5 | use crate::scheduler::{schedule, with_scheduler};
+  |                        ^^^^^^^^
+
+warning: unused import: `crate::thread`
+ --> muos-threads/src/interrupts.rs:7:5
+  |
+7 | use crate::thread;
+  |     ^^^^^^^^^^^^^
+
+warning: unused import: `Thread`
+ --> muos-threads/src/asm.rs:2:21
+  |
+2 | use crate::thread::{Thread, ThreadContext};
+  |                     ^^^^^^
+
+warning: crate-level attribute should be in the root module
+ --> muos-threads/src/thread.rs:1:1
+  |
+1 | #![no_std]
+  | ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_attributes)]` on by default
+
+warning: crate-level attribute should be in the root module
+ --> muos-threads/src/scheduler.rs:1:1
+  |
+1 | #![no_std]
+  | ^^^^^^^^^^
+
+warning: the feature `asm` has been stable since 1.59.0 and no longer requires an attribute to enable
+ --> muos-threads/src/lib.rs:1:29
+  |
+1 | #![feature(naked_functions, asm)]
+  |                             ^^^
+  |
+  = note: `#[warn(stable_features)]` on by default
+
+warning: `muos-threads` (lib) generated 13 warnings (4 duplicates) (run `cargo fix --lib -p muos-threads` to apply 5 suggestions)
+   Compiling muos-main v0.1.0 (/Users/gzhynko/Projects/Embedded/RPiPico/muos/muos-main)
+warning: unused import: `core::panic::PanicInfo`
+ --> muos-main/src/main.rs:4:5
+  |
+4 | use core::panic::PanicInfo;
+  |     ^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `cyw43_min::bus::Cyw43Bus`
+ --> muos-main/src/main.rs:5:5
+  |
+5 | use cyw43_min::bus::Cyw43Bus;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `cyw43_min::driver::Cyw43Driver`
+ --> muos-main/src/main.rs:6:5
+  |
+6 | use cyw43_min::driver::Cyw43Driver;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `AnyPin`, `FunctionSio`, `PIOBuilder`, `Pin`, `PullType`, `ShiftDirection`, `SioOutput`, `StateMachine`, and `pac`
+  --> muos-main/src/main.rs:11:45
+   |
+11 | ...:{PIOExt, PIOBuilder, StateMachine, ShiftDirection}, dma::DMAExt, gpio::{Pin, AnyPin, FunctionSio, PullType, SioOutput}, pac};
+   |              ^^^^^^^^^^  ^^^^^^^^^^^^  ^^^^^^^^^^^^^^                       ^^^  ^^^^^^  ^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^   ^^^
+
+warning: unused import: `embedded_hal::delay::DelayNs`
+  --> muos-main/src/main.rs:13:5
+   |
+13 | use embedded_hal::delay::DelayNs;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `embedded_hal::digital::OutputPin`
+  --> muos-main/src/main.rs:14:5
+   |
+14 | use embedded_hal::digital::OutputPin;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `embedded_hal::spi::SpiBus`
+  --> muos-main/src/main.rs:16:5
+   |
+16 | use embedded_hal::spi::SpiBus;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `single_buffer`
+  --> muos-main/src/main.rs:17:23
+   |
+17 | use rp235x_hal::dma::{single_buffer, SingleChannel};
+   |                       ^^^^^^^^^^^^^
+
+warning: unused variable: `timer`
+  --> muos-main/src/main.rs:48:11
+   |
+48 |   let mut timer = hal::Timer::new_timer0(pac.TIMER0, &mut pac.RESETS, &clocks);
+   |           ^^^^^ help: if this is intentional, prefix it with an underscore: `_timer`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `on_pin_func`
+  --> muos-main/src/main.rs:66:7
+   |
+66 |   let on_pin_func = pins.gpio23.into_push_pull_output_in_state(PinState::Low); // WL_ON
+   |       ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_on_pin_func`
+
+warning: unused variable: `pio_spi`
+  --> muos-main/src/main.rs:68:11
+   |
+68 |   let mut pio_spi = PioSpi::new(&mut pio, sm0, clock_pin, data_pin, dma.ch0, cs_pin_func);
+   |           ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_pio_spi`
+
+warning: variable does not need to be mutable
+  --> muos-main/src/main.rs:48:7
+   |
+48 |   let mut timer = hal::Timer::new_timer0(pac.TIMER0, &mut pac.RESETS, &clocks);
+   |       ----^^^^^
+   |       |
+   |       help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: variable does not need to be mutable
+  --> muos-main/src/main.rs:68:7
+   |
+68 |   let mut pio_spi = PioSpi::new(&mut pio, sm0, clock_pin, data_pin, dma.ch0, cs_pin_func);
+   |       ----^^^^^^^
+   |       |
+   |       help: remove this `mut`
+
+warning: `muos-main` (bin "muos-main") generated 17 warnings (4 duplicates) (run `cargo fix --bin "muos-main"` to apply 10 suggestions)
+    Finished `release` profile [optimized + debuginfo] target(s) in 1.35s

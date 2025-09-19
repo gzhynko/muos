@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "muos-main", "muos-syscall",
+    "muos-threads"
+]
+default-members = ["muos-main"]
+
+[profile.release]
+debug = 2

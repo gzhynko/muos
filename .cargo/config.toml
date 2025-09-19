@@ -1,0 +1,19 @@
+[build]
+target = "thumbv8m.main-none-eabihf"
+
+[target.thumbv8m.main-none-eabihf]
+rustflags = [
+  "-C", "link-arg=--nmagic",
+  "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=-Tdefmt.x",
+  "-C", "target-cpu=cortex-m33",
+  "-C", "target-feature=+vfp4",
+]
+
+#runner = "picotool load -u -v -x -t elf"
+#runner = "./openocd-runner.sh target/thumbv8m.main-none-eabihf/release/muos"
+runner = "probe-rs run --chip RP235x --protocol swd"
+#runner = 'sudo openocd -f interface/cmsis-dap.cfg -f target/rp2350.cfg -c "adapter speed 5000" -c "program blink_wifi.elf verify reset exit"'
+
+[env]
+DEFMT_LOG = "trace"
